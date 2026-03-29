@@ -263,15 +263,69 @@ ul { list-style: none; }
   overflow: hidden;
 }
 
-.hero__glow {
+.hero__shapes {
   position: absolute;
-  right: -120px;
-  top: -120px;
-  width: 560px;
-  height: 560px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(14,188,148,0.13) 0%, transparent 65%);
+  inset: 0;
   pointer-events: none;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+}
+
+.shape--circle-lg {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(14,188,148,0.07);
+  top: -100px;
+  right: -80px;
+}
+
+.shape--circle-sm {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(14,188,148,0.09);
+  bottom: 40px;
+  left: 5%;
+}
+
+.shape--ring-lg {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid rgba(14,188,148,0.15);
+  top: 60px;
+  right: 120px;
+}
+
+.shape--ring-sm {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid rgba(14,188,148,0.18);
+  bottom: 80px;
+  right: 15%;
+}
+
+.shape--square {
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(14,188,148,0.13);
+  transform: rotate(30deg);
+  top: 45%;
+  left: 2%;
+}
+
+.shape--dot-grid {
+  width: 160px;
+  height: 160px;
+  top: 20px;
+  left: 12%;
+  background-image: radial-gradient(circle, rgba(14,188,148,0.25) 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
 }
 
 .hero__inner {
